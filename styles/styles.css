@@ -99,3 +99,47 @@ body {
 .container__descricao {
     padding: 2em;
 }
+
+.dispositovos__lista { /* Define a costumização da lista como um todo */
+    display: flex; /* Inicia um display flex para disposição em roll dos objetos */
+    justify-content: center; /* Alinha o conteudo no centro */
+    list-style-type: none; /* Retira a decoração dos objetos da lista */
+    margin: 5em 0; /* Cria um espaçamento */
+}
+
+.dispositovos {
+    text-align: center; /* Alinha o conteudo no centro */
+}
+
+.dispositovos__titulo {
+    font-size: 48px;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-01);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{ /* Aqui foi necessario usar a tag 'a' para forçar a foramntação */
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
