@@ -24,6 +24,7 @@ body {
 
 .container { /* Definie a altura total da pagina a ser usada */
     height: 100vh;
+    grid: 50% 50% ;
 }
 
 .container__botao { /* Classe para estilização do botão de assinatura */
@@ -31,5 +32,12 @@ body {
     border-radius: 5px; /* Define o arredondamento das bordas do botão */
     padding: 1em; /* Tamanho da funte usando medida relativa para melhor responsividade */
     color: var(--branco-01); /* Define a cor do texto */
-    display: block;
+    display: block; /* Garante que o botão ocupe todo o seu bloco */
+    text-decoration: none; /* Tira a estilização do link */
+}
+
+.botao__secundario {
+    background-color: transparent; /* Deixa o fundo trnasparente */
+    border: 2px solid var(--branco-01); /* Define uma borda de cor solida para o botão, importante lembrar do solid */
+    text-shadow: none; /* Tira a estilização do link */
 }
