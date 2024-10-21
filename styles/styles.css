@@ -24,7 +24,8 @@ body {
 
 .container { /* Definie a altura total da pagina a ser usada */
     height: 100vh;
-    grid: 50% 50% ;
+    display: grid;
+    grid-template-columns: 50% 50% ;
 }
 
 .container__botao { /* Classe para estilização do botão de assinatura */
