@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root { /* Variaveis para melhor menutenção da aplicação */
+    --branco-01: #FFFFFF;
+    --cinza-01: #C0C0C0;
+    --azul-01: #167BF7;
+    ---vermelho-01: #EC2F46;
+    --fundo-preto: #040814;
+    --fonte-principal: "Inter";
+} 
+
+body {
+    background-color: var(--fundo-preto); /* Defini cor de fundo da pagina */
+    color: var(--branco-01); /* Defini cor padrão do texto */
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{  /* O elemento * é uma especie de coringa que faz com que todos os objetos sejam afetados pelos seus parametros */
+    margin: 0;
+    padding: 0;
+}
+
+.principal { /* Defini a imagem de fundo do inicio da pagina principal */
+    background-image: url("/img/Background.png");
+    background-repeat: no-repeat; /* Tira a reptição da imagem */
+    background-size: contain;
+    text-align: center;
+}
+
+.container { /* Definie a altura total da pagina a ser usada */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+
+.container__botao { /* Classe para estilização do botão de assinatura */
+    background-color:  var(--azul-01); /* Define a cor de fundo */
+    border-radius: 5px; /* Define o arredondamento das bordas do botão */
+    padding: 1em; /* Tamanho da fundo usando medida relativa para melhor responsividade */
+    color: var(--branco-01); /* Define a cor do texto */
+    display: block; /* Garante que o botão ocupe todo o seu bloco */
+    text-decoration: none; /* Tira a estilização do link */
+    margin-bottom: 1em; /* Define o espaçamento dos botões, usei um margin-bottom porque assim já afasto o aviso embaixo */
+}
+
+.botao__secundario {
+    background-color: transparent; /* Deixa o fundo trnasparente */
+    border: 2px solid var(--branco-01); /* Define uma borda de cor solida para o botão, importante lembrar do solid */
+    text-shadow: none; /* Tira a estilização do link */
+}
+
+.container__titulo { /* Eslitização do titulo h1 */
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__aviso { /* Eslitização do aviso abixo dos botões iniciais */
+    font-size: 12px;
+    color: var(--cinza-01);
+}
+
+.container__imagem { /* Define o espaçamento da imagem do combo */
+    margin: 1em 0 2em 0;
+}
+
+.container__box { /* Define o espaçamento principal dos elementos */
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 0 6em;
+}
+
+.secundario {
+    align-items: center;
+    margin: 6em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-01);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-01)
+}
+
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositovos__lista { /* Define a costumização da lista como um todo */
+    display: flex; /* Inicia um display flex para disposição em roll dos objetos */
+    justify-content: center; /* Alinha o conteudo no centro */
+    list-style-type: none; /* Retira a decoração dos objetos da lista */
+    margin: 5em 0; /* Cria um espaçamento */
+}
+
+.dispositovos {
+    text-align: center; /* Alinha o conteudo no centro */
+}
+
+.dispositovos__titulo {
+    font-size: 48px;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-01);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{ /* Aqui foi necessario usar a tag 'a' para forçar a foramntação */
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
