@@ -27,13 +27,14 @@ body {
     background-image: url("/img/Background.png");
     background-repeat: no-repeat; /* Tira a reptição da imagem */
     background-size: contain;
+    align-items: center;
     text-align: center;
 }
 
 .container { /* Definie a altura total da pagina a ser usada */
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 40% 60% ;
 }
 
 .container__botao { /* Classe para estilização do botão de assinatura */
@@ -48,8 +49,7 @@ body {
 
 .botao__secundario {
     background-color: transparent; /* Deixa o fundo trnasparente */
-    border: 2px solid var(--branco-01); /* Define uma borda de cor solida para o botão, importante lembrar do solid */
-    text-shadow: none; /* Tira a estilização do link */
+    border: 2px solid var(--branco-01); /* Define uma borda de cor solida para o botão, importante lembrar do solid */   
 }
 
 .container__titulo { /* Eslitização do titulo h1 */
@@ -142,4 +142,26 @@ body {
 .rodape {
     text-align: center;
     margin: 5em 3em;
+}
+
+/* Aqui o hover e o active criam o efeito nos links do rodapé, quando o mouse está em cima fica azul e quando clica-se vermelho */
+.lista__link a:hover {
+    color: var(--azul-01);
+}
+
+.lista__link a:active {
+    color: var(---vermelho-01);
+}
+
+/* Aqui fiz o mesmo que com os links mas para os botões, também adicionei uma borda */
+.container__botao:hover {
+    background-color: var(--fundo-preto);
+    color: var(---vermelho-01);
+    border: 2px solid var(---vermelho-01);
+}
+
+.container__botao:active {
+    background-color: cornflowerblue;
+    color: var(---vermelho-01);
+    border: 2px solid var(---vermelho-01);
 }
